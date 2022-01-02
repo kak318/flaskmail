@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='min.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Eaoe Mail</title>
+</head>
+<body>
+  <div class="content">
+    <h1>Settings</h1>
+    <a href="signout">Sign out</a>
+    <a href="settings/password">Change password</a>
+        <a href="delete" style="color: red">Delete account</a></br></br></br>
+    <a href="my">back</a>
+  </div>
+
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+  </script>
+</body>
+</html>
